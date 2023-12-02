@@ -3,3 +3,6 @@ description: 'Scan manifest files with CPE info in repository for possible vulne
 runs:
   using: 'docker'
   image: 'Dockerfile'
+outputs:
+  vulnerable:
+    description: 'Set to 1 if vulnerability was found, 0 otherwise'
